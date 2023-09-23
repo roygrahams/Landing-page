@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow: auto;
+    background-color: rgb(250, 231, 206);
+    cursor: pointer;
+}
+
+header {
+    max-width: 100%;
+    float: center;
+    height: 55PX;
+    background-color: rgb(208, 208, 194);
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem grey);
+
+}
+
+.root {
+    margin-left: 40px;
+    margin-right: auto;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: rgb(41, 224, 56);
+
+}
+
+.root:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+ul {
+    /*width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    color: grey;
+    cursor: pointer;*/
+    width: 100%;
+    padding: 5px 75px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+li {
+    margin: 8px;
+    padding: 8px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+
+.des {
+    border: 4px solid rgb(41, 224, 56);
+    border-radius: 3px;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(13, 224, 56);
+    color: #fff;
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem rgb(13, 224, 56));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    width: 40%;
+    padding: 195px 85px;
+}
+
+h1 {
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem gray);
+}
+
+
+.second-p {
+    color: grey;
+    margin-top: 9px;
+    font-weight: 500;
+}
+
+.second-b {
+    border: 4px solid rgb(41, 224, 56);
+    background-color: rgb(13, 224, 56);
+    color: aliceblue;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    border-radius: 2px;
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem rgb(13, 224, 56));
+    margin-top: 17px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+
+}
+
+.second-b:hover {
+    transform: scale(1.1);
+}
+
+.container,
+.image {
+    display: flex;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    padding-left: 70px;
+    margin-right: auto;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem rgb(57, 23, 23));
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    height: 170px;
+    background-color: rgb(50, 50, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+h5 {
+    color: rgb(116, 114, 114);
+    margin: 0 0 7px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: gray;
+    margin: 0 0 7px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.last {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(161, 152, 152);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 480px) {
+
+    ul {
+        display: block;
+        padding: 0;
+    }
+
+    li {
+        width: 100% !important;
+        text-align: center;
+        padding: 4px !important;
+    }
+
+    .des {
+        border-radius: none !important;
+        box-shadow: none !important;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100% !important;
+        text-align: center;
+        padding: 0px !important;
+        margin-top: 200px !important;
+    }
+
+    h1 {
+        font-size: 1rem !important;
+        line-height: 15px !important;
+
+    }
+
+    p {
+        font-size: 0.6rem !important;
+    }
+
+    img {
+        flex: 50% !important;
+        width: 50% !important;
+        height: auto !important;
+    }
+}
